@@ -7,15 +7,16 @@ import "./sass/index.scss"
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Banner from './components/Banner/Banner';
+import imgHomeBanner from "./assets/images/banner/homeBanner.png"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     <Header/>
     <Footer/>
-    <div>
-      <Banner image="chemin/vers/votre/image.jpg" texte="Votre texte ici" />
-    </div>
+    <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />
+    
     </div>
  
 );
