@@ -1,7 +1,7 @@
 import logo from "../../assets/images/logo/LOGO.svg";
 
 
-export default function Header() {
+ function Header() {
   return (
     <header className="header">
      <figure className="header_fig">
@@ -10,3 +10,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header;
