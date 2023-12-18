@@ -1,20 +1,22 @@
 import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./sass/index.scss";
-import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Footer from "./components/Footer/Footer";
-
-
+import Home from "./pages/Home/Home";
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
   return (
-    <main>
-      <Header/>
-      <Banner/>
-      <Footer/>
-    </main>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 };
+
 
 export default App;
