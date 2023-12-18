@@ -1,25 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import "./sass/index.scss"
-
-
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Banner from './components/Banner/Banner';
-import imgHomeBanner from "./assets/images/banner/homeBanner.png"
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+// ReactDOM pour s'attacher à notre HTML.
+const root = ReactDOM.createRoot(document.getElementById("root"));
+//dans la variable root on affiche tout mon application on importe
+// le composant parent App.js
 root.render(
-  <div>
-    <Header/>
-    <Footer/>
-    <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />
-    
-    </div>
- 
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-
-
