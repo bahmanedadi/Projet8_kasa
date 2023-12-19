@@ -1,8 +1,10 @@
-function Collapse({titre,children}){
+const Collapse = ({ title, children }) =>{
     return(
         <div>
+           
 
-        <h2>{titre}</h2>
+
+        <h2>{title}</h2>
         <div> {children}</div>
         
         </div>
