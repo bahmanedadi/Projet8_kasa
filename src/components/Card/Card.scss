@@ -1,5 +1,5 @@
 .card {
-    width: 100%;
+    width: 54%;
     height: 255px;
     position: relative;
     margin-bottom: 20px;
@@ -21,6 +21,8 @@
       position: absolute;
       bottom: 0;
       margin: 15px 20px;
+       font-size:18px;
+       font-weight:  500;
       color:  #FFF;
       box-sizing: inherit;
     }
