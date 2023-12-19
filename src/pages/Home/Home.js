@@ -13,7 +13,7 @@ const Home = () => {
       <main>
         <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />
         {
-            Data.map(({id,  title,  cover,  pictures})=>(
+            Data.map(({ title,  cover})=>(
                 <Card title={title} image={cover}/> 
             )
             )

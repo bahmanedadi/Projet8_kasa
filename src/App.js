@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Error from "./pages/Error/Error";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import About from "./pages/About/About";
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} /> 
       </Routes>
       <Footer />
