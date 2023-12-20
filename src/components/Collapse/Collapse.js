@@ -1,14 +1,21 @@
-const Collapse = ({ title, children }) =>{
+import React, { useState } from 'react';
+import './Collapse.scss';
+
+export default function Collapse(props) {
+    const [isOpen, setIsOpen] = useState(false);
+    
+    function openCloseCollapse() {
+        if(isOpen) {
+            setIsOpen(false);
+        } else {
+            setIsOpen(true);
+        }
+    }
+
     return(
-        <div>
-           
-
-
-        <h2>{title}</h2>
-        <div> {children}</div>
-        
+        <div className="Collapse">
+           <div onClick={openCloseCollapse} className={isOpen ? "Collapse-title open" : "Collapse-title"}>{props.title}</div>
+           <div className={isOpen ? "Collapse-content" : "Collapse-content hidden"}>{props.children}</div>
         </div>
-
     )
 }
-export default Collapse;
