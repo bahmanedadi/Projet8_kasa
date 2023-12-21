@@ -1,8 +1,12 @@
-.gallery{
+.gallery {
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0;
-    gap: 30px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    padding: 56px;
+    margin-bottom: 50px;
+    margin-left: 32px;
+    margin-right: 32px;
 }

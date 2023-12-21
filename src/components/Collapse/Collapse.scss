@@ -17,11 +17,11 @@
             height: 32px;
             width: 32px;
             background-image: url(arrow.svg);
-            transform: rotate(-90deg);
+            transform: rotate(0deg);
         }
         &.open {
             &::after {
-                transform: rotate(0);
+                transform: rotate(-180deg);
             }
         }
     }
