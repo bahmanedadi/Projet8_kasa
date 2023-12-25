@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const Error = () => {
@@ -6,9 +7,12 @@ const Error = () => {
 
         <div className="error">
             
-                <div className="error_nbr">404</div>
+                <p className="error_nbr">404</p>
                 
-                <div className="error_text">Oups! La page que vous demandez n'existe pas</div>
+                <p className="error_text">Oups! La page que vous demandez n'existe pas</p>
+                <Link to="/" className="error_Link">
+          Retourner sur la page d'accueil
+        </Link>
            
         </div>
     );

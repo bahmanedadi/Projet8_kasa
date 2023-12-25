@@ -10,8 +10,8 @@ function Header() {
       </figure>
       <nav className="nav">
         <ul >
-          <Link className="nav_item" to="/">Accueil</Link>
-          <Link className="nav_item" to="/about">A Propos</Link>
+          <Link to="/" className="nav_item " >Accueil</Link>
+          <Link to="/about" className="nav_item " >A Propos</Link>
         </ul>
       </nav>
     </header>

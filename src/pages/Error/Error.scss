@@ -1,25 +1,37 @@
 .error {
+    color: #ff6060;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    justify-items: center;
+    margin-top: 139px;
+    margin-bottom: 139px;
+    gap: 139px;
+
 
     &_nbr {
-        color: #FF6060;
-        text-align: center;
-        font-family: Montserrat;
+        width: 597px;
+        height: 263px;
         font-size: 288px;
         font-weight: 700;
         line-height: 142.6%;
     }
 
     &_text {
-        text-align: center;
-        color: #FF6060;
-        font-family: Montserrat;
         font-size: 36px;
         font-weight: 500;
-        line-height: 142.6%;
+        line-height: 142.6%
 
+    }
+    &_Link {
+        font-size: 18px;
+        font-weight: 500;
+        color: #FF6060;
+
+
+        &:hover,
+        &:focus {
+            text-decoration-line: underline;
+        }
     }
 }

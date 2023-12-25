@@ -1,4 +1,4 @@
-function Logements(){
+function Logement(){
     return(
         <div>
 
@@ -6,4 +6,4 @@ function Logements(){
     )
 }
 
-export default Logements;
+export default Logement;
