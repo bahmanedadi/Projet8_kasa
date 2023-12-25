@@ -1,7 +1,9 @@
-function Logement(){
-    return(
-        <div>
+import FicheLogement from "../../components/FicheLogement/FicheLogement";
 
+function Logement() {
+    return (
+        <div>
+            <FicheLogement />
         </div>
     )
 }
