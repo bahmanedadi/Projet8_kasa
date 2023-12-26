@@ -1,12 +1,12 @@
 
 
-.Fiche-logement {
+.Fiche_logement {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.description-info {
+.info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 31px;
@@ -15,12 +15,12 @@
         flex-direction: column;
     }
 
-    &__titletags {
+    &_titletags {
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        &__title {
+        &_title {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -52,7 +52,7 @@
             }
         }
 
-        &__tags {
+        &_tags {
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
@@ -60,7 +60,7 @@
     }
 
 
-    &__proprietaire {
+    &_proprietaire {
        
         @media screen and (max-width: 768px) {
             display: flex;
@@ -68,7 +68,7 @@
             justify-content: space-between;
         }
 
-        &__nom-prop {
+        &_nom {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -97,7 +97,7 @@
             }
         }
 
-        &__rate {
+        &_star {
             height: 36px;
             display: flex;
             align-items: center;
@@ -111,8 +111,7 @@
             .etoile {
                 width: 100%;
                 height: 36px;
-                margin-right: -157px;
-
+                margin-right: -168px;
 
             }
 
@@ -120,7 +119,7 @@
     }
 }
 
-.description-centent {
+.content {
     display: flex;
     gap: 76px;
 
@@ -129,7 +128,7 @@
         gap: 20px;
     }
 
-    &__description {
+    &_description {
         width: 60%;
 
         @media screen and (max-width: 768px) {
@@ -137,7 +136,7 @@
         }
     }
 
-    &__equipement {
+    &_equipement {
         width: 60%;
 
         @media screen and (max-width: 768px) {

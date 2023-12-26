@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Collapse.scss';
+
 
 export default function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +9,11 @@ export default function Collapse({ title, content }) {
   };
 
   return (
-    <div className="Collapse">
-      <div onClick={openCloseCollapse} className={`Collapse-title ${isOpen ? 'open' : ''}`}>
+    <div className="collapse">
+      <div onClick={openCloseCollapse} className={`collapse_title ${isOpen ? 'open' : ''}`}>
         {title}
       </div>
-      <div className={`Collapse-content ${isOpen ? '' : 'hidden'}`}>{content}</div>
+      <div className={`collapse_content ${isOpen ? '' : 'hidden'}`}>{content}</div>
     </div>
   );
 }
