@@ -1,9 +1,11 @@
-.collapse_about{
+.collapse_about {
     margin-left: 80px;
     margin-right: 80px;
 }
+
 .collapse {
     margin-bottom: 30px;
+
     &_title {
         background: var(--Red, #FF6060);
         color: #FFF;
@@ -13,29 +15,35 @@
         align-items: center;
         justify-content: space-between;
         font-size: 18px;
-     
+
         &::after {
-            content:"";
+            content: "";
             display: block;
             height: 32px;
             width: 32px;
             background-image: url(arrow.svg);
-            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+            /* Ajout d'une transition pour une animation fluide */
         }
+
         &.open {
             &::after {
                 transform: rotate(-180deg);
             }
         }
     }
+
     &_content {
         padding: 20px;
         background-color: #F6F6F6;
         color: #FF6060;
+
         p {
             line-height: 22px;
+            margin: 0;
         }
     }
+
     .hidden {
         display: none;
     }
