@@ -1,21 +1,21 @@
-import { Link } from 'react-router-dom';
 import logo from "../../assets/images/logo/LOGO.svg";
+import { NavLink } from "react-router-dom";
 
-
-function Header() {
+export default function Header() {
   return (
+    <>
     <header className="header">
-      <figure className="header_fig">
+     <figure className="header_fig">
         <img className="logo" src={logo} alt="logo de l'agence kasa" />
       </figure>
-      <nav className="nav">
+      <nav className="header_nav">
         <ul >
-        
-          <Link to="/" className="nav_item   nav_item_active" >Accueil</Link>
-          <Link to="/about" className="nav_item  nav_item_active" >A Propos</Link>
+          <NavLink className={(link) => (link.isActive ? "header_nav_item header_nav_active" : "header_nav_item")}  to="/">Accueil</NavLink>
+          <NavLink className={(link) => (link.isActive ? "header_nav_item header_nav_active" : "header_nav_item")} to="/about">A Propos</NavLink>
         </ul>
       </nav>
+
     </header>
+    </>
   );
 }
-export default Header;
