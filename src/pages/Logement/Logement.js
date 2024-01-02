@@ -2,9 +2,9 @@ import FicheLogement from "../../components/FicheLogement/FicheLogement";
 
 function Logement() {
     return (
-        <div>
+        <main>
             <FicheLogement />
-        </div>
+        </main>
     )
 }
 

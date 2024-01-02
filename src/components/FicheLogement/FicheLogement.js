@@ -1,5 +1,5 @@
 
-//import React, { useState } from "react";
+
 import { useParams, Navigate } from "react-router-dom";
 import Data from "../../logements.json";
 import Collapse from "../Collapse/Collapse";

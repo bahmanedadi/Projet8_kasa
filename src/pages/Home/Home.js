@@ -10,8 +10,7 @@ const Home = () => {
     <div className="home">
       <main>
         <Banner texte="Chez vous, partout et ailleurs" image={imgHomeBanner} />
-       <Gallery/>
-         
+        <Gallery />
       </main>
     </div>
   );
