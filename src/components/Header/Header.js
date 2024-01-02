@@ -11,8 +11,8 @@ function Header() {
       <nav className="nav">
         <ul >
         
-          <Link to="/" className="nav_item "  activeClassName="nav_item_active" >Accueil</Link>
-          <Link to="/about" className="nav_item "  activeClassName="nav_item_active" >A Propos</Link>
+          <Link to="/" className="nav_item   nav_item_active" >Accueil</Link>
+          <Link to="/about" className="nav_item  nav_item_active" >A Propos</Link>
         </ul>
       </nav>
     </header>

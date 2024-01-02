@@ -47,6 +47,12 @@
   width: 46px;
   height: 79px;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    background-image: url("../../assets/images/carrousel/arrowRightMobile.svg");
+    top: 50%;
+    right:-3%;
+
+  }
 }
 
 .left-Arrow {
@@ -58,5 +64,11 @@
   height: 79px;
   z-index: 10;
   cursor: pointer;
+  @media screen and (max-width: 768px) {
+    background-image: url("../../assets/images/carrousel/arrowLeftMobile.svg");
+    top: 50%;
+    left: 2%
+
+  }
 
 }
