@@ -23,12 +23,13 @@
             width: 32px;
             background-image: url(arrow.svg);
             transition: transform 0.3s ease;
-            /* Ajout d'une transition pour une animation fluide */
+
         }
 
         &.open {
             &::after {
                 transform: rotate(-180deg);
+
             }
         }
     }
@@ -37,14 +38,21 @@
         padding: 20px;
         background-color: #F6F6F6;
         color: #FF6060;
+        
+        &.open {
+            &::after {
+                transition: transform 0.4s ease-in-out, max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 
-        p {
-            line-height: 22px;
-            margin: 0;
+            }
         }
     }
 
-    .hidden {
-        display: none;
+    p {
+        line-height: 22px;
+        margin: 0;
     }
+}
+
+.hidden {
+    display: none;
 }

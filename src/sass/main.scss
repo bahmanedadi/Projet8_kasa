@@ -1,0 +1,33 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+ 
+  body {
+   
+    justify-content: center;
+    margin: auto;
+  }
+  header,
+  article {
+    max-width: 1440px;
+   
+  }
+ 
+  main {
+    max-width: 1440px;
+    padding: 50px 100px;
+    margin: 0 auto;
+ 
+    @media screen and (max-width: 1024px) {
+      padding: 27px 25px;
+    }
+ 
+    @media screen and (max-width: 768px) {
+      padding: 20px 20px;
+    }
+  }
+
+
+  a{
+    text-decoration: none;
+  }

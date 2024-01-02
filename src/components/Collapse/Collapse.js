@@ -13,7 +13,7 @@ export default function Collapse({ title, content }) {
       <div onClick={openCloseCollapse} className={`collapse_title ${isOpen ? 'open' : ''}`}>
         {title}
       </div>
-      <div className={`collapse_content ${isOpen ? '' : 'hidden'}`}>{content}</div>
+      <div className={`collapse_content ${isOpen ? 'animated' : 'hidden'}`}>{content}</div>
     </div>
   );
 }

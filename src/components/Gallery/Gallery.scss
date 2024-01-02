@@ -1,12 +1,16 @@
 .gallery {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     border-radius: 25px;
     background: #F6F6F6;
-    padding: 56px;
-    margin-bottom: 50px;
-    margin-left: 32px;
-    margin-right: 32px;
-    gap: 19px;
-
+    padding: 50px;
+    
+    @media screen and (max-width: 768px) {
+        flex-direction:column;
+        margin-bottom: 27px;
+        background: #FFF;
+        padding: 0px;
+    }
 }
