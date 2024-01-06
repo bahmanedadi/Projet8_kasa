@@ -9,7 +9,7 @@ function Star(props) {
   return (
     <div className="star">
       {Array.from({ length: maxScore }, (_, index) => (
-        <img  key={index + 1} className="etoile" src={score >= index + 1 ? starE : starF} alt="star"/>
+        <img  key={index + 1} className="etoile" src={score >= index + 1 ? starF : starE } alt="star"/>
       ))}
     </div>
   );
