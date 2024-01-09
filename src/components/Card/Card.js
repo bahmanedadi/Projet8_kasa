@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+
+
 function Card({ id, image, title }) {
   return (
     <div className="card">

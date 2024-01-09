@@ -1,5 +1,3 @@
-
-
 import { useParams, Navigate } from "react-router-dom";
 import Data from "../../logements.json";
 import Collapse from "../../components/Collapse/Collapse";
@@ -10,7 +8,7 @@ import SlideShow from "../../components/SlideShow/SlideShow";
 
 
 const Logement = () => {
-    
+
   /* Récupère la bonne fiche */
   const { id } = useParams();
 
@@ -49,9 +47,8 @@ const Logement = () => {
                   {tagsLogement}
                 </div>
               </div>
-
+              {/* Hosting */}
               <div className="info_proprietaire">
-                {/* Hosting */}
                 <div className="info_proprietaire_nom">
                   <Host
                     name={ficheLogement?.host.name}
@@ -59,7 +56,7 @@ const Logement = () => {
                   />
                 </div>
                 {/* Rating */}
-                <div className="info_proprietaire_star">
+                <div className="info_proprietaire_stars">
                   <Rate score={ficheLogement.rating} />
                 </div>
               </div>
@@ -78,7 +75,7 @@ const Logement = () => {
             </div>
           </div>
         </main>
-       
+
       ) : (
         <Navigate replace to="/404" />
       )}

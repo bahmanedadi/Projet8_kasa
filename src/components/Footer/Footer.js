@@ -1,4 +1,3 @@
-
 import logo from "../../assets/images/logo/logo_footer.png";
 
 const Footer = () => {

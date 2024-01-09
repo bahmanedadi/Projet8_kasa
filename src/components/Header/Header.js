@@ -1,7 +1,7 @@
 import logo from "../../assets/images/logo/LOGO.svg";
 import { NavLink } from "react-router-dom";
 
-export default function Header() {
+ function Header() {
   return (
     <>
     <header className="header">
@@ -19,3 +19,4 @@ export default function Header() {
     </>
   );
 }
+export default Header;

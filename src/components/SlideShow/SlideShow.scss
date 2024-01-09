@@ -10,32 +10,25 @@
 
 .slider {
   & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      border-radius: 25px;
-  
-    }
-  
-    &_number {
-      position: absolute;
-      bottom: 24px;
-      right: 50%;
-      color: #fff;
-      font-size: 18px;
-      font-weight: 500;
-  
-      @media screen and (max-width: 768px) {
-        display: none;
-  
-      }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 25px;
   }
 
-}
+  &_number {
+    position: absolute;
+    bottom: 24px;
+    right: 50%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
 
-.active {
-  opacity: 1;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .right-Arrow {
@@ -47,10 +40,11 @@
   width: 46px;
   height: 79px;
   cursor: pointer;
+
   @media screen and (max-width: 768px) {
     background-image: url("../../assets/images/carrousel/arrowRightMobile.svg");
     top: 50%;
-    right:-3%;
+    right: -3%;
 
   }
 }
@@ -64,11 +58,10 @@
   height: 79px;
   z-index: 10;
   cursor: pointer;
+
   @media screen and (max-width: 768px) {
     background-image: url("../../assets/images/carrousel/arrowLeftMobile.svg");
     top: 50%;
     left: 2%
-
   }
-
 }

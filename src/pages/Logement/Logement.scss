@@ -1,4 +1,3 @@
-
 .Fiche_logement {
     display: flex;
     flex-direction: column;
@@ -33,7 +32,6 @@
 
                 @media screen and (max-width: 768px) {
                     font-size: 18px;
-
                 }
 
             }
@@ -54,12 +52,12 @@
         &_tags {
             display: flex;
             flex-wrap: wrap;
-                   }
+        }
     }
 
 
     &_proprietaire {
-       
+
         @media screen and (max-width: 768px) {
             display: flex;
             flex-direction: row-reverse;
@@ -95,8 +93,7 @@
             }
         }
 
-        &_star {
-            height: 36px;
+        &_stars {
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -106,12 +103,21 @@
                 height: 18px;
             }
 
-            .etoile {
-                width: 100%;
-                height: 36px;
-                margin-right: -168px;
-
+            .star {
+                height: 24px;
+                color: #E3E3E3;
+                @media screen and (max-width: 768px) {
+                    height: 13px;
+                }
             }
+
+            .star_red {
+                height: 24px;
+                color: #FF6060;
+                @media screen and (max-width: 768px) {
+                    height: 13px;
+                }
+            }  
 
         }
     }

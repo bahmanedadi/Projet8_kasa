@@ -6,10 +6,7 @@ function Gallery() {
         <div className="gallery">
             {
                 Data.map(({ id, title, cover }) => (
-                   
-                        <Card title={title} image={cover} id={id}  key={id}/>
-        
-
+                    <Card title={title} image={cover} id={id} key={id} />
                 ))
             }
         </div>

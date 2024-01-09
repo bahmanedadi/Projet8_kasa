@@ -1,18 +1,23 @@
 import React from 'react';
-import starE from "../../assets/images/star/starEmpty.svg";
-import starF from "../../assets/images/star/starFull.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Star(props) {
   const score = props.score;
   const maxScore = 5;
 
   return (
-    <div className="star">
+    <div className="star_contenair">
       {Array.from({ length: maxScore }, (_, index) => (
-        <img  key={index + 1} className="etoile" src={score >= index + 1 ? starF : starE } alt="star"/>
+        <FontAwesomeIcon
+          icon={faStar}
+          className={score >= index + 1 ? 'star_red' : 'star'}
+          key={index + 1}
+        />
       ))}
     </div>
   );
 }
 
 export default Star;
+
