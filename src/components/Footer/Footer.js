@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo/logo_footer.png";
 const Footer = () => {
     return (
       <footer className="footer">
-        <img src={logo} alt="" className="footer_logo" />
+        <img src={logo} alt="logo kasa" className="footer_logo" />
         <p className="footer_text">
           © 2020 Kasa. All rights reserved
         </p>

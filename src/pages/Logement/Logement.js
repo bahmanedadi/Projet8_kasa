@@ -9,17 +9,17 @@ import SlideShow from "../../components/SlideShow/SlideShow";
 
 const Logement = () => {
 
-  /* Récupère la bonne fiche */
+  /***  Récupère la bonne fiche ***/
   const { id } = useParams();
 
   const ficheLogement = Data.find((logement) => logement.id === id);
 
-  /* Tags */
+  /***  Tags  ***/
   const tagsLogement = ficheLogement?.tags.map((tags, i) => {
     return <Tag key={i} nom={tags} />;
   });
 
-  /* Équipements */
+  /***   Équipements  ***/
   const equipements = ficheLogement?.equipments.map((equipment, i) => {
     return (
       <ul key={i}>
